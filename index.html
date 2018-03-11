@@ -1,3 +1,54 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+const site = "./"
+
+function changeImg(img){
+  var src = img.src;
+  var preSrc = src.slice(0,src.indexOf(".jpg")-1);
+  var postSrc = src.slice(src.indexOf(".jpg")-1);
+  var numStr = postSrc.slice(0,postSrc.indexOf(".jpg"));
+  var numInt = parseInt(numStr)+1;
+  img.src = preSrc + numInt + ".jpg";
+  img.onerror = function() { 
+    img.src = preSrc + "0.jpg"; 
+    changeImg(img)
+  }
+}
+
+function voicePlay(voice){
+  var audio = new Audio(voice.id);
+  audio.load();
+  audio.play();
+}
+
+
+</script>
+<style>
+
+span {
+  font-size: 28px;
+  font-family: "りいポップ角";
+  color: hotpink;
+}
+span:hover {
+  cursor : pointer;
+  color: red;
+}
+img{
+}
+div{
+  display: inline-block;
+  width: 1200px;
+  overflow: auto;
+  height: 720px;
+  border: 1px solid black;
+}
+
+</style>
+</head>
+<body> 
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/101.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/102.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/103.png">
@@ -58,6 +109,7 @@
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/2901.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/3001.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/3101.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/3102.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/3201.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/3301.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/3401.png">
@@ -113,6 +165,7 @@
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/7802.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/7901.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/8001.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/8002.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/8101.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/8201.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/8301.png">
@@ -125,6 +178,7 @@
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/9001.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/9101.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/9201.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/9202.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/9301.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/9302.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/9401.png">
@@ -179,3 +233,968 @@
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/14301.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/14401.png">
 <img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/14501.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/14601.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/14701.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/14801.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/14901.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/15001.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/15101.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/15201.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/15301.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/15401.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/15501.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/15601.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/15701.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/15801.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/15901.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/16001.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/16101.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/16201.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/16301.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/16401.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/16501.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/16601.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/16701.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/16801.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/16901.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/17001.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/17101.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/17201.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/17301.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/17401.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/20101.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/20201.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/20301.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/20401.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/20501.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/20601.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/20701.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/20901.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/21001.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/21101.png">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/21201.png">
+
+<br>
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/10111.jpg" onclick="changeImg(this)">
+<div>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_001.mp3" onclick="voicePlay(this)">「ん……ちゅ……ちゅ、ぴゅ、む……、ぢゅ……ぴちゅ、く、ちゅぴ……はぁ、っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_002.mp3" onclick="voicePlay(this)">「な、なによ、何か文句あるの？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_003.mp3" onclick="voicePlay(this)">「私が、その……あの……お、おな、オナニーしている所にいきなり入ってきた癖に」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_004.mp3" onclick="voicePlay(this)">「呻きかと思って、なんて言い訳にならないんだから」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_005.mp3" onclick="voicePlay(this)">「……し、仕方ないじゃない」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_006.mp3" onclick="voicePlay(this)">「アルケミストは力が大きくなる程、欲求が制御できなくなるのよ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_007.mp3" onclick="voicePlay(this)">「性欲だって……我慢、できなくって……、と、とにかく！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_008.mp3" onclick="voicePlay(this)">「私の恥ずかしい姿を見たんだから、あなただって……ん、ぷちゅ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_009.mp3" onclick="voicePlay(this)">「はぁ……熱い……あなたのって、こんな風になるんだ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_010.mp3" onclick="voicePlay(this)">「あ……先っぽ、何だか透明なのが……じゅぷ、ぴちゃ……ん、なんだか、変な味……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_011.mp3" onclick="voicePlay(this)">「でも……ぢゅ、くぷ……舐めてると、身体が、さらに熱くなって……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_012.mp3" onclick="voicePlay(this)">「もっと、欲しくなる……ちゅ、じゅる、ぢゅ、ぢゅうううう！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_013.mp3" onclick="voicePlay(this)">「ん……んん！？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_014.mp3" onclick="voicePlay(this)">「ぷあっ……ちょ、ちょっと、なんでソコ触って……！ひ、ああっ、待っ、んぅっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_015.mp3" onclick="voicePlay(this)">「な、なにこれ、自分でするのとは全然違う……、ひぁっ！？　あっ、うくっ……んんっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_016.mp3" onclick="voicePlay(this)">「ダメ、そんなトコ、舐めちゃ……あああっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_017.mp3" onclick="voicePlay(this)">「ちょ、調子に、乗ってぇ……んっ、私だって……じゅ、ぷ、じゅっ、ぴちゅ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_018.mp3" onclick="voicePlay(this)">「ちゅ、じゅううううっ！ちゅぴ、は、ぁっ……んんっ！？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_019.mp3" onclick="voicePlay(this)">「そ、そんな激しく、されたら……うあっ、私……くぅ……ぢゅるるっ、ぢゅぅうううう！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_020.mp3" onclick="voicePlay(this)">「このまま、んっ、あんたにやられっぱなしなんて、う、ぢゅぷ、じゅる、ぴちゃ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_021.mp3" onclick="voicePlay(this)">「びくびくして、苦しそう……ちゅ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_022.mp3" onclick="voicePlay(this)">「ほら、もう限界なのよね？　とろとろしたものが、こんなに溢れて……ぢゅ、ぢゅう、んく……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_023.mp3" onclick="voicePlay(this)">「んああっ、そ、そんな深いところまで、舐めないで……！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_024.mp3" onclick="voicePlay(this)">「ダメ、それ以上されたら、私……ん、ぢゅ、ぢゅううううう！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_025.mp3" onclick="voicePlay(this)">「いっふぇ……もふ、わらひも……じゅ、ぴ……、いっひょに……ぢゅう、じゅ、ぷ、ぢゅるるるぅっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_026.mp3" onclick="voicePlay(this)">「ん、んんん――っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_027.mp3" onclick="voicePlay(this)">「ぷぁっ！　はっ、ああっ！　う、ぁ……。あなたの、こんなに……熱くて、ドロドロで……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_028.mp3" onclick="voicePlay(this)">「口にも、入って……、ちゅる……ん、んくっ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_029.mp3" onclick="voicePlay(this)">「これが、精液……なんだか変な味。のどにすごく絡みつくし……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_030.mp3" onclick="voicePlay(this)">「でも、不思議。あなたのだって思うと、どうしてだか、美味しい……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_031.mp3" onclick="voicePlay(this)">「それに、お腹の奥から、じんわり温かくなって……。これが、あなたの……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_01_032.mp3" onclick="voicePlay(this)">「ねえ……また、その、我慢出来なくなったら、……よ、呼んでもいい？」</span>
+</div>
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/10121.jpg" onclick="changeImg(this)">
+<div>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_001.mp3" onclick="voicePlay(this)">「ん、んんっ、あああああっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_002.mp3" onclick="voicePlay(this)">「はぁ、すごい……んっ、中で、震えてるのが分かる。これがあなたの……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_003.mp3" onclick="voicePlay(this)">「うっ、あ……なんだか、すごく満たされ気分……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_004.mp3" onclick="voicePlay(this)">「ねえ、我慢しないで、いいから……。あなたの好きなように……して？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_005.mp3" onclick="voicePlay(this)">「ふぁあっ、ん、んんっ……う、あっ……。すごい……奥まで、ごりごりって……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_006.mp3" onclick="voicePlay(this)">「あなたのが……はぁ、ん……おちんちんが、私の奥ぅ……子宮の入り口をぐりぐりって……あっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_007.mp3" onclick="voicePlay(this)">「すごい……これ、あなたの事を身体の一番大切なところで感じられて……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_008.mp3" onclick="voicePlay(this)">「ねえ、私の中、気持ちいい？んっ……おちんちん、ビクッってして……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_009.mp3" onclick="voicePlay(this)">「ふふっ、そっか。あなたと違って、おちんちんは素直だね。気持ちいいよって、答えてくれた」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_010.mp3" onclick="voicePlay(this)">「ん、ふっ……いい子だから、たくさん撫で撫でして、あげ、るね……んっ、はぁ、ぁっ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_011.mp3" onclick="voicePlay(this)">「もっと、私の奥に来ていいから……、んぅ、これ、すごい……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_012.mp3" onclick="voicePlay(this)">「ん、うぁっ……私の一番奥、こつん、ってノックしてる……そこ、入りたいの……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_013.mp3" onclick="voicePlay(this)">「でも、そこは、あっ、赤ちゃんのお部屋だから、うあっ……ダメ、ぐりぐりって、こじ開けないでぇ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_014.mp3" onclick="voicePlay(this)">「あっ、んんっ、はげ、し……これ、頭の中ぼーっとして、何も、ふっ、ぁ、考えられない……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_015.mp3" onclick="voicePlay(this)">「なんだか、ん、怖い、けど……っ、はぁ、う、ああっ……！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_016.mp3" onclick="voicePlay(this)">「わたっ、私……熱くって、あなたのが欲しいって身体の奥が、きゅんって……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_017.mp3" onclick="voicePlay(this)">「ねえ、分かる？　私の中が、あなたのおちんちんをぎゅって締め付けてるの……気持ちいい？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_018.mp3" onclick="voicePlay(this)">「いいよ、もっと強くして……はっ、んんっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_019.mp3" onclick="voicePlay(this)">「ら、め……私、こんなの……、もう来ちゃう……これ以上、我慢出来ない……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_020.mp3" onclick="voicePlay(this)">「頭の中、とろとろに溶けちゃって、お腹の内側をごしごしされてるのしか、分からなくて」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_021.mp3" onclick="voicePlay(this)">「あ、うぁあっ！　ん、んん……！　ああああっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_022.mp3" onclick="voicePlay(this)">「ねえ、一緒……一緒に……あっ、ああっ……！あなたの、私に……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_023.mp3" onclick="voicePlay(this)">「あっ、あっ、来る、来ちゃう！あなたのもすごく震えて、もう限界なんだよね？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_024.mp3" onclick="voicePlay(this)">「おちんちん、我慢できないんでしょ。いいよ、私が全部受け止めてあげるから」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_025.mp3" onclick="voicePlay(this)">「んぅ、出し、て……お願い。あなたの、精液、っ……私にちょうだい！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_026.mp3" onclick="voicePlay(this)">「あっ、うくっ……ん、んんっ、う、ぁ……あ、ああああああ――っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_027.mp3" onclick="voicePlay(this)">「あ、あっ……ぁ、これ、すごい。身体の奥、精液が叩いて……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_028.mp3" onclick="voicePlay(this)">「熱いのが、じわじわって染み込んでくる……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_029.mp3" onclick="voicePlay(this)">「ん、ぅ……ねえ、気持ちよかった？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_030.mp3" onclick="voicePlay(this)">「私も……すごく、幸せだった。それに、あなたを今まで以上に、近くに感じるの」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_031.mp3" onclick="voicePlay(this)">「今なら、もう誰にも負ける気がしない。……これが、あなたの力なのね」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_032.mp3" onclick="voicePlay(this)">「……ねえ？　あの、その……えっと」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_033.mp3" onclick="voicePlay(this)">「わ、私を、こんな気持ちにさせたんだもの。ずっと傍にいて、ね」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/101_02_034.mp3" onclick="voicePlay(this)">「……約束、なんだから」</span>
+</div>
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/10211.jpg" onclick="changeImg(this)">
+<div>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_001.mp3" onclick="voicePlay(this)">「あ、ありがと……って、あの、さ。なんか固いの、当たってるんだけど……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_002.mp3" onclick="voicePlay(this)">「ちょ、ちょっと、手……待っ……！こ、こんなところでなに盛ってるのよ……！？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_003.mp3" onclick="voicePlay(this)">「んっ……ちょっと、ほんとにやめてってば……、こんなところで……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_004.mp3" onclick="voicePlay(this)">「誰かに、見られちゃう、から……。あなたに隠れてるから大丈夫って、そういう話じゃ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_005.mp3" onclick="voicePlay(this)">「んっ……ちょ、っと、乳首、こりこりしないで……。声、出ちゃう、から……ぁ、っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_006.mp3" onclick="voicePlay(this)">「この、いい加減に、しないと、後で、承知しないん、だからね……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_007.mp3" onclick="voicePlay(this)">「って、その手……う、うそ、でしょ？　こんな人がいっぱいのとこで、ソコ……ん、んっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_008.mp3" onclick="voicePlay(this)">「やっ……濡れて、なんて……ん、熱っ……、こ、これって……待って待って、冗談、だよね……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_009.mp3" onclick="voicePlay(this)">「ん、っ……んんんっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_010.mp3" onclick="voicePlay(this)">「バ、カぁ……こんな、とこで挿れるなんて、正気なの……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_011.mp3" onclick="voicePlay(this)">「早く、抜きなさい、ってば……。んんっ……だから、濡れてなんて……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_012.mp3" onclick="voicePlay(this)">「ぁ、ん……奥、ぐりぐり、ってぇ……、そんな風に、されたら……声、出ちゃう……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_013.mp3" onclick="voicePlay(this)">「んぅ、ぁ……んんっ……！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_014.mp3" onclick="voicePlay(this)">「や、っ……そんな、動いたら、周りの人にバレちゃうってば……ん、くっ……ぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_015.mp3" onclick="voicePlay(this)">「喜んでなんて……っ、私は、あなたみたいに、下半身で、生きてないのよ……ん、ぅぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_016.mp3" onclick="voicePlay(this)">「んんん……っ、そんな、クリトリス、いじられたら……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_017.mp3" onclick="voicePlay(this)">「ね、ねえ、お願いだから、やめてよ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_018.mp3" onclick="voicePlay(this)">「するなら、んっ……次の駅で、降りて、ちゃんと二人きりになれるとこに行こ……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_019.mp3" onclick="voicePlay(this)">「こんなとこ、あなた以外の人に、見られたく、ないから……ぁ、っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_020.mp3" onclick="voicePlay(this)">「は、ぁ……っ、認める、から……、私、感じちゃって、る……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_021.mp3" onclick="voicePlay(this)">「おまんこ、濡れて……お腹の奥、熱く、て……っ、もっと……ちゃんと、あなたが、欲しい……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_022.mp3" onclick="voicePlay(this)">「だから、ね……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_023.mp3" onclick="voicePlay(this)">「ん、んんんぅ――っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_024.mp3" onclick="voicePlay(this)">「ぁ……ん、っ……、なん、で……まだ……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_025.mp3" onclick="voicePlay(this)">「我慢できない、って……、やっ、どうして、激しく……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_026.mp3" onclick="voicePlay(this)">「んんっ、ぁ……これ、びくびくって……、も、もしかして……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_027.mp3" onclick="voicePlay(this)">「こ、こんな、とこで……？ぅ、あ……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_028.mp3" onclick="voicePlay(this)">「あ、っ……そん、な、奥、突き上げたら……っ、ん、んんっ……あっ、ぁ、あぁっ……！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_029.mp3" onclick="voicePlay(this)">「ん、んんん――っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_030.mp3" onclick="voicePlay(this)">「ぁ……ぅ……は、ぁ……はぁ……、こんな、いっぱい……こんな、ところで……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_031.mp3" onclick="voicePlay(this)">「どう、するのよ……もしかしたら、誰かに、ばれちゃってる、かも……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_032.mp3" onclick="voicePlay(this)">「それにこれから、リニアに乗るたびに、今日の事思い出して……うぅ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_033.mp3" onclick="voicePlay(this)">「最低。変態。馬鹿。性欲魔人」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/102_h01_034.mp3" onclick="voicePlay(this)">「……今度やったら、許さないからね」</span>
+</div>
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/10311.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/10321.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/20111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/20121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/20211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/20221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/30111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/30121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/30211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/30221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/40111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/40121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/40211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/40221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/50111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/50121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/60111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/60121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/60211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/60221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/70111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/70121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/80111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/80121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/80211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/80221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/80311.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/80321.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/90111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/90121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/90211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/90221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/90311.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/90321.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/100111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/100121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/100211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/100221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/100311.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/100321.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/110111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/110121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/110211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/110221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/110311.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/110321.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/120111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/120121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/120211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/120221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/130111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/130121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/130211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/130221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/140111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/140121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/140211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/140221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/150111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/150121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/150211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/150221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/150311.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/150321.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/160111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/160121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/160211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/160221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/160311.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/160321.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/170111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/170121.jpg" onclick="changeImg(this)">
+<div>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_001.mp3" onclick="voicePlay(this)">「はぁ……はぁ、私、すごくいけない子なんです。あなたを見かけるだけで……濡れちゃって」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_002.mp3" onclick="voicePlay(this)">「本当は、毎日毎日、たくさん、我慢してるんですよ。それなのに、あなたは、知らない顔で……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_003.mp3" onclick="voicePlay(this)">「もう我慢できません……ふふっ、あなたの全部、私がもらっちゃってもいいですか……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_004.mp3" onclick="voicePlay(this)">「ほら、分かります？　あなたのおちんぽの先端が、私のおまんこにキスしてますよ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_005.mp3" onclick="voicePlay(this)">「あはっ、そんなに上下に動かして、何度もキスして、早く入りたいんですか？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_006.mp3" onclick="voicePlay(this)">「私もです……ほら、ぼたぼたって、愛液、こぼれて、おちんぽを濡らしちゃってます」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_007.mp3" onclick="voicePlay(this)">「入れちゃいますね？　このまま、おちんぽ全部私の中に入れちゃいますからね」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_008.mp3" onclick="voicePlay(this)">「ん、んんっ……！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_009.mp3" onclick="voicePlay(this)">「あ、はっ……入ったぁ、私のおまんこに、おっきいの、ちゃんと全部入りましたよ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_010.mp3" onclick="voicePlay(this)">「すごい、お腹の中、おちんぽが押し上げて、圧迫してて、串刺しにされちゃったみたい」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_011.mp3" onclick="voicePlay(this)">「あ、んっ……ねえ、どうですか？　私の小さなおまんこ串刺しにして、気持ちいですか？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_012.mp3" onclick="voicePlay(this)">「ふふっ、ぎちぎちおまんこ、あなたのものにされちゃいました」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_013.mp3" onclick="voicePlay(this)">「他のおちんぽなんて、絶対に入れません。あなただけ、あなたの性処理の為だけにだけ使っていいんですよ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_014.mp3" onclick="voicePlay(this)">「私のおまんこ気持ちいいんですよね？そんな蕩けた顔してるんだから、そうなんですよね？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_015.mp3" onclick="voicePlay(this)">「あはっ、全部吸い出してあげます。ほらっ、こうやって、んっ、腰、持ち上げて……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_016.mp3" onclick="voicePlay(this)">「また、一気に奥まで、下ろして……んぁあああ！あっ、あっ、どう、ですかぁ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_017.mp3" onclick="voicePlay(this)">「私の中、きゅんきゅんしてます。腰、こうやってひねったりするの、どうですか？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_018.mp3" onclick="voicePlay(this)">「ん、ふふっ、これもいいんですね。すごい、あなたのおちんぽ、何しても喜んでくれる」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_019.mp3" onclick="voicePlay(this)">「んっ……ぅ、ん、っああ！中でぷくって大きくなってる」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_020.mp3" onclick="voicePlay(this)">「これ、射精の準備ですよね？精管開いて、溜まった精液、出しちゃうんですよね？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_021.mp3" onclick="voicePlay(this)">「ああ、いいですよ。あなたの熱い精液で、私のこと、いっぱい汚してください」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_022.mp3" onclick="voicePlay(this)">「んっ、あ、あっ……頑張って、頑張って。射精、はやく射精して……う、く……んああっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_023.mp3" onclick="voicePlay(this)">「はっ、あ……んんん、あぁあああああ……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_024.mp3" onclick="voicePlay(this)">「ん、あ、あ……すごい、勢いよくて、熱いのが、びちゃ、びちゃって私のお腹の内側、叩いてる」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_025.mp3" onclick="voicePlay(this)">「あなたのが、私の中、満たして……あ、ぁ、っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_026.mp3" onclick="voicePlay(this)">「ん、精液……溢れてきてる……もったいない。ん……ちゅ、ぷ……私とあなたのが混ざって、おいし」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_027.mp3" onclick="voicePlay(this)">「舌の上にへばりついて、のどに絡んで、お口まで妊娠しちゃいそうです」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1701_h02_028.mp3" onclick="voicePlay(this)">「ふふ……またこんなに大きくしちゃって……。……もう一度、しますか？」</span>
+</div>
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/170211.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/170221.jpg" onclick="changeImg(this)">
+<div>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_001.mp3" onclick="voicePlay(this)">「楽しいクリスマス……そのはずなのに、どうしてでしょうね」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_002.mp3" onclick="voicePlay(this)">「私の心は、こんなにも重く鈍くて……、まるで、鉛にでもなったみたい」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_003.mp3" onclick="voicePlay(this)">「……手を、握ってください。離さないで……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_004.mp3" onclick="voicePlay(this)">「あなたがいなくなったら、今度こそ、暗い闇の底に、落ちて行ってしまいそうで……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_005.mp3" onclick="voicePlay(this)">「だから、あなたの温もりを感じさせてください」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_006.mp3" onclick="voicePlay(this)">「ん……ふふっ、こうしていると、まるで抱っこでもされているみたいですね」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_007.mp3" onclick="voicePlay(this)">「なんだか……懐かしい感覚。ちょっと、甘えすぎでしょうか？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_008.mp3" onclick="voicePlay(this)">「……構わないのなら、もう少し、甘えさせてください……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_009.mp3" onclick="voicePlay(this)">「こうしていると、触れ合った胸から、あなたの鼓動が伝わってきて、すごく落ち着く……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_010.mp3" onclick="voicePlay(this)">「いつも、頭の中で、黒いものが渦巻いているのに、この時だけは……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_011.mp3" onclick="voicePlay(this)">「……もっと、深いところで、あなたに触れたい」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_012.mp3" onclick="voicePlay(this)">「ねえ……このまま、挿れてください。繭のおまんこの、一番奥に……パパのおちんぽ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_013.mp3" onclick="voicePlay(this)">「くすっ……いい、ですよね？今だけは、パパって呼んでも……んっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_014.mp3" onclick="voicePlay(this)">「ぁ、ん……パパの、おちんぽ……繭のおまんこ押し広げて……は、ぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_015.mp3" onclick="voicePlay(this)">「おまんこの内側、熱いよ……パパ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_016.mp3" onclick="voicePlay(this)">「んっ……繭のおまんこ、気持ちいい？いっぱい、ごしごししてね？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_017.mp3" onclick="voicePlay(this)">「繭、頑張って、パパのおちんぽの形、おまんこの中で覚えるからね」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_018.mp3" onclick="voicePlay(this)">「パパが一番気持ちよくなれるように、なる、から……あ、んっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_019.mp3" onclick="voicePlay(this)">「ぁ……あっ、んん……おちんぽが、どんどん大きくなって……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_020.mp3" onclick="voicePlay(this)">「おまんこ、ぐちゅぐちゅにして……、パパ、繭の中に射精する準備、してるんだよね……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_021.mp3" onclick="voicePlay(this)">「は、ぁ……んっ、あ、あっ……ん、く……、いい、よ。パパの精子、繭に、出して……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_022.mp3" onclick="voicePlay(this)">「パパの好きに、して？　なんでもして、いいんだよ。繭は、パパのものだから」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_023.mp3" onclick="voicePlay(this)">「ん、ん……っ、繭の子宮に、射精して、妊娠させたい？　いい、よ……あ、んっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_024.mp3" onclick="voicePlay(this)">「パパの精子なら、繭、頑張って受精、するから」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_025.mp3" onclick="voicePlay(this)">「繭、排卵して……パパの精子に卵子、ぐちゃぐちゃにしてもらう準備、しちゃうから……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_026.mp3" onclick="voicePlay(this)">「赤ちゃん、つくっちゃ、おっか……あはっ。ん、ぁ……ああっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_027.mp3" onclick="voicePlay(this)">「すご、い……パパ、興奮してるの？繭に妊娠させるの想像して、おちんぽ硬くしてるんだぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_028.mp3" onclick="voicePlay(this)">「ふ、ぁ……あ、ぁっ……んんっ、んぁ……！パパ……繭のこと、妊娠、させて」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_029.mp3" onclick="voicePlay(this)">「ぷりぷりの精子で、新鮮な卵子犯して、着床させて？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_030.mp3" onclick="voicePlay(this)">「あ、はっ……んっ、あ……赤ちゃん、作ろう？パパと繭の赤ちゃん……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_031.mp3" onclick="voicePlay(this)">「女の子、が……んんっ、いい、なぁ……。だっ、てぇ……ぁ、ああっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_032.mp3" onclick="voicePlay(this)">「パパ、寂しいん、だもんねっ？お姉ちゃん、が、んんっ……いなく、なってぇ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_033.mp3" onclick="voicePlay(this)">「だか、らぁ……赤ちゃん、つくろ？繭とパパで、女の子……お姉ちゃん、つくろっ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_034.mp3" onclick="voicePlay(this)">「くすっ……ふふふっ。パパおちんぽ、ビクッてしたよ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_035.mp3" onclick="voicePlay(this)">「いいんだよ？　大丈夫、だよ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_036.mp3" onclick="voicePlay(this)">「あ、んんっ……繭の、子宮は……、パパに、使ってもらうために、あるから……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_037.mp3" onclick="voicePlay(this)">「いーっぱい、いっぱい……ん、ぁ……、精子、出して……んんっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_038.mp3" onclick="voicePlay(this)">「ん、ああっ……分かる、よっ……、パパの精子、おちんぽのぼってきてるの……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_039.mp3" onclick="voicePlay(this)">「ぷくって膨らんできて、もうすぐ、出しちゃうんだよね。繭の子宮に……繭のこと、妊娠させて……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_040.mp3" onclick="voicePlay(this)">「んぁ、ああっ！　分かる？　繭の子宮、もうおちんぽにぴったりくっついてるよ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_041.mp3" onclick="voicePlay(this)">「ほら、繭のこと、妊娠させよ？　赤ちゃん作って、お姉ちゃん、産んであげよう？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_042.mp3" onclick="voicePlay(this)">「んぁ、っ！　あ、あっ、ああっ！出して……パパ……パパぁ……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_043.mp3" onclick="voicePlay(this)">「ん、ぁあああああああっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_044.mp3" onclick="voicePlay(this)">「あっ、ぁ……あ……。あ、つい……パパの精子……子宮の中に、入ってきて」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_045.mp3" onclick="voicePlay(this)">「ん……ぁ……ふ、ふふっ。これでお姉ちゃん、出来る、かなぁ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_046.mp3" onclick="voicePlay(this)">「そうしたら、パパも嬉しいよね……ふふっ。繭、頑張るからね……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_047.mp3" onclick="voicePlay(this)">「ぁ……ん……パパ……パパぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/1702_h02_048.mp3" onclick="voicePlay(this)">「お姉ちゃんが、産まれたら、パパとママと、家族四人で……幸せに、なろうね」</span>
+</div>
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/180111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/180121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/180211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/180221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/180311.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/180321.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/190111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/190121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/190211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/190221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/200111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/200121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/210111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/210121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/220111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/220121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/230111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/230121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/230211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/230221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/240111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/240121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/250111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/250121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/250211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/250221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/250311.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/250321.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/260111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/260121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/260211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/260221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/270111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/270121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/280111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/280121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/290111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/290121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/300111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/300121.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/310111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/310121.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/310211.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/310221.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/320111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/320121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/330111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/330121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/340111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/340121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/350111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/350121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/360111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/360121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/370111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/370121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/380111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/380121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/390111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/390121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/400111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/400121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/410111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/410121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/420111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/420121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/430111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/430121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/430211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/430221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/430311.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/430321.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/440111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/440121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/450111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/450121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/460111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/460121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/460211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/460221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/470111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/470121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/470211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/470221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/480111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/480121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/490111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/490121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/490211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/490221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/500111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/500121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/510111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/510121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/530111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/530121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/530211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/530221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/540111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/540121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/550111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/550121.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/550211.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/550221.jpg" onclick="changeImg(this)">
+<div>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_001.mp3" onclick="voicePlay(this)">「お祭り、終わっちゃいましたけど……今日は星も綺麗ですよね。」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_002.mp3" onclick="voicePlay(this)">「この輝きの下だと、なんだかいつもより開放的になれる気がします……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_003.mp3" onclick="voicePlay(this)">「……だから、でしょうか」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_004.mp3" onclick="voicePlay(this)">「この夜空の下で、あなたと求め合いたい……。そんな風に、思ってしまうのは」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_005.mp3" onclick="voicePlay(this)">「……こちらに、来てください。いい、ですよね……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_006.mp3" onclick="voicePlay(this)">「ほら、見えますよね、私のおまんこ、もうこんなにとろとろになっちゃってますよ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_007.mp3" onclick="voicePlay(this)">「あなたのおちんちんの感触、思い出したら、お祭りの最中でも、おまんこ濡れちゃいました」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_008.mp3" onclick="voicePlay(this)">「ぁは……ぐちょぐちょで、とろとろのおまんこ……おちんちん入れたら、ぜったい気持ちいいですよ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_009.mp3" onclick="voicePlay(this)">「吸血鬼の仮装をしてますけど……血なんかよりも、あなたの精液、いっぱい飲ませて欲しいんです……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_010.mp3" onclick="voicePlay(this)">「はぁ、はぁ……早く入れてください……あなた専用の精液お便所、いっぱい使ってください……お願いします」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_011.mp3" onclick="voicePlay(this)">「あ、おちんちんが入ってきます……んっ、あ、は、ぁぁぁっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_012.mp3" onclick="voicePlay(this)">「は、ぁっ、すごく、大きい、です……んっ、私のおまんこ、押し広げられて、ます……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_013.mp3" onclick="voicePlay(this)">「はぁ、ん、んく……動いていいですよ？私のおまんこで、いっぱい気持ちよくなってください……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_014.mp3" onclick="voicePlay(this)">「あっ、いい、ですっ、んんっ、おちんちん、気持ちいいっ……は、ぁっ、あく、んんぅ……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_015.mp3" onclick="voicePlay(this)">「んっ、は、あっ、はぁっ……あ、ふぁ、あ、は、はぁ、あ、ぁぁ……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_016.mp3" onclick="voicePlay(this)">「奥まで、ずんずんって、突かれてっ……は、あっ、んく、ふ、ぁ……おまんこ、痺れちゃいます……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_017.mp3" onclick="voicePlay(this)">「はぁっ、こんな、外なのにっ、あふっ、声、出ちゃうっ……んんっ、ふ、ぁっ、あ、はぁ……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_018.mp3" onclick="voicePlay(this)">「んんぅっ、こんな、公園のベンチで、子宮までずんずん突き上げられてっ、ひ、ぁっ、はぁ……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_019.mp3" onclick="voicePlay(this)">「こんなところ、見られたらっ、ひあっ、私が、あなたのお便所だってばれちゃうのに、ぃ……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_020.mp3" onclick="voicePlay(this)">「あぁっ、いけないのにっ、バレちゃうの想像して、また気持ちよくっ、ふあっ、は、ぁぁ……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_021.mp3" onclick="voicePlay(this)">「ふあっ、激しっ……ひぅ、んはっ、あ、はあ、んく、んんぅ……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_022.mp3" onclick="voicePlay(this)">「は、あっ、おちんちんの出っ張りが、おまんこの壁、擦って、ひぁっ、腰、震えちゃいますっ、ふ、ぁぁっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_023.mp3" onclick="voicePlay(this)">「あ、はっ、ひぅっ、おまんこ、きゅんきゅんって締め付けちゃうぅ……ふ、ぁっ、んん……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_024.mp3" onclick="voicePlay(this)">「はぁ、あ、ひぁっ、あなたに調教されてますっ、どこでも使えるように、お便所調教されてっ、ひ、あぁっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_025.mp3" onclick="voicePlay(this)">「本当は、さっきも、指なんかじゃ足りなくてっ……んくっ、おちんちん、入れて欲しかったんですっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_026.mp3" onclick="voicePlay(this)">「だから、もっとくださいっ、もっと奥まで突いてっ、あなたのおちんちんで、私の中、満たしてくださいっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_027.mp3" onclick="voicePlay(this)">「あ、ひっ、んく、あ、はぁっ……！んんっ、あ、く、んはぁぁっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_028.mp3" onclick="voicePlay(this)">「おまんこに、我慢汁いっぱい塗り付けられてっ、あ、はぁっ、あなたの物だって、マーキングされてますっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_029.mp3" onclick="voicePlay(this)">「んんっ、早く精液、精液で、おまんこマーキングしてくださいっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_030.mp3" onclick="voicePlay(this)">「お便所に精液注ぎ込んで、私の中、あなたの熱と匂いで、いっぱいにして欲しいっ……あ、はぁっ、あふ、はぁぁっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_031.mp3" onclick="voicePlay(this)">「だから、早く精液出してっ……あなたの、あなた専用のおまんこに、ぜんぶ中出ししてくださいっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_032.mp3" onclick="voicePlay(this)">「んんっ！　おちんちん、子宮、ぐりぐりって……んはぁっ、あ、こんなの、我慢出来るわけない、ぃっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_033.mp3" onclick="voicePlay(this)">「おちんちん、もっと欲しくなっちゃう、おまんこが、おねだり、しちゃいますぅ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_034.mp3" onclick="voicePlay(this)">「はい、そうですっ、私のおまんこ、あなた専用の精液お便所ですっ、はっ、ぁ、ひゃぁっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_035.mp3" onclick="voicePlay(this)">「あなたが出したいときに、出したいだけ中出しできる、あなた専用の、精液お便所です……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_036.mp3" onclick="voicePlay(this)">「だから、いっぱい注ぎ込んでくださいっ、私のお腹の中、あなたでいっぱいにしてっ、あ、はあぁっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_037.mp3" onclick="voicePlay(this)">「精液欲しくて、おちんちん締め付けちゃう変態おまんこに、いっぱい射精してっ、ん、んぁぁあっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_038.mp3" onclick="voicePlay(this)">「私も、もうイキますからっ、一緒にイキましょ？絶頂おまんこに、射精しちゃいましょ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_039.mp3" onclick="voicePlay(this)">「あ、くっ、んはっ、あ、はぁっ！　いい、いいですっ、おちんちん、気持ちいいんですっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_040.mp3" onclick="voicePlay(this)">「あっ、あぁっ！　も、イクっ！ふあっ、あ、あ、あ、ああぁぁぁ――っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_041.mp3" onclick="voicePlay(this)">「は、あ、あぁぁっ……すご、子宮に、精液、流し込まれてっ！んく、ふっ、ぁふ、ん、んぅぅ……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_042.mp3" onclick="voicePlay(this)">「あ、はあっ、は、はぁ……おちんちん、まだ脈打って、んんっ、射精してる……は、ぁ、ぁぁ……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_043.mp3" onclick="voicePlay(this)">「はぁぁ、はぁ、はぁ、んぅ……あなたの精液で、私の中……いっぱいにされちゃいました……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_044.mp3" onclick="voicePlay(this)">「ん、あは……すごく、気持ちよかったですよ……ここが外なんてこと忘れて、いっぱい喘いじゃいました」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_045.mp3" onclick="voicePlay(this)">「誰かに見られてても、私はいいですよ……だって、これからもずっと、私はあなたの……精液お便所ですから」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/5502_h02_046.mp3" onclick="voicePlay(this)">「ん……これからも、あなた専用の精液お便所に、いっぱい中出ししてくださいね……？」</span>
+</div>
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/560111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/560121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/570111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/570121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/590111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/590121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/610111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/610121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/620111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/620121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/630111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/630121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/630211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/630221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/640111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/640121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/650111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/650121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/660111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/660121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/670111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/670121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/680111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/680121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/690111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/690121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/700111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/700121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/710111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/710121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/720111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/720121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/730111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/730121.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/740111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/740121.jpg" onclick="changeImg(this)">
+<div>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_001.mp3" onclick="voicePlay(this)">「ねぇ、ダーリン……メルのこと、嫌いにならないよね？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_002.mp3" onclick="voicePlay(this)">「お願いがあって……その、本当の名前も捧げたし……魂ごと全部、メルのことをあげたわけで……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_003.mp3" onclick="voicePlay(this)">「隠さない本心っていうやつを、その、伝えておこうかなと……えへへ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_004.mp3" onclick="voicePlay(this)">「あの……あのねーぇ……あくまで、ソフトになんだけどその、ね……うぅぅ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_005.mp3" onclick="voicePlay(this)">「し、縛ってみにゃい！？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_006.mp3" onclick="voicePlay(this)">「うぁー……ちょっと舌噛んじゃった……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_007.mp3" onclick="voicePlay(this)">「んっ……ふぅ、んっ……どうしよう……ダーリンの前で、こんな……あぅ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_008.mp3" onclick="voicePlay(this)">「おまんこ見えちゃってるのに……足、閉じれなくて……勝手に濡れちゃってるの、見られてるーぅ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_009.mp3" onclick="voicePlay(this)">「腕も動かないのに、ダーリンの前だから安心する……メルの全部をダーリンに任せちゃってるみたい……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_010.mp3" onclick="voicePlay(this)">「んっ、どうしよう……きゅんきゅんって、するぅ……おまんこ、勝手にゾクゾクしちゃう、よぉ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_011.mp3" onclick="voicePlay(this)">「ダーリン……メル、抵抗しないからね」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_012.mp3" onclick="voicePlay(this)">「メルのこと、いぢめていーよぉ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_013.mp3" onclick="voicePlay(this)">「あ……ダーリンの、入ってくる……あっ……んん……ふぅ、んっ……あぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_014.mp3" onclick="voicePlay(this)">「ダーリン……メルは縛らなくたって、なんでもさせてあげるよ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_015.mp3" onclick="voicePlay(this)">「んっ、抵抗、しないよ……全部、受け止める、よ……えへへ……ダーリンが大好きだよ……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_016.mp3" onclick="voicePlay(this)">「あ……気持ちいいの、すごい……んんっ、ふぅ腰、震えてるのに……んっ……身体、動かせない……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_017.mp3" onclick="voicePlay(this)">「ダーリンから逃げられない……逃げなくていい……んふふ……これ、やっぱり素敵……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_018.mp3" onclick="voicePlay(this)">「ダーリン、いっぱいハメハメして……メルをえっちに鳴かせてーぇ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_019.mp3" onclick="voicePlay(this)">「おちんちんで、おまんこいぢめ……しよ逃げられないメルのこと、おかしくしちゃお」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_020.mp3" onclick="voicePlay(this)">「メル、腰も動かせないから……抑えつけて、無防備おまんこに、精子びゅうびゅう流し込んで……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_021.mp3" onclick="voicePlay(this)">「メルを虜にしてね。んふふ……あっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_022.mp3" onclick="voicePlay(this)">「だぁりん、おっきくなった……先っぽ、震えてる……メルのおまんこ、キュってしたから……かな」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_023.mp3" onclick="voicePlay(this)">「はぁ、ん……ん、ん、あぅ……ずりずり、はじまったぁどうしよ……メルのおまんこ、音が鳴っちゃってるよ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_024.mp3" onclick="voicePlay(this)">「くふふ……誘惑してたのに、イチバン発情してたのはメルの方だったね……あはっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_025.mp3" onclick="voicePlay(this)">「おまんこ……ダーリンのおちんちんでいっぱいになってる……んっ、あんしん、するぅ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_026.mp3" onclick="voicePlay(this)">「あっ……うぅ……それぇ、ずるい、よぉ……腰、ぴったりくっつけるの……子宮こすれて、だめぇ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_027.mp3" onclick="voicePlay(this)">「赤ちゃんのおへや、いぢめるの……だめだよ……っやぁ、んっ！　メル、逃げらんないのにぃ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_028.mp3" onclick="voicePlay(this)">「んっ、くぅ……弱いとこ、ばっかりぃ……やぁん……えっちで鬼畜なの、しゅてき……えへへ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_029.mp3" onclick="voicePlay(this)">「おまんこいぢめ、激しいよぉ……おちんちんで子宮ほぐして……ふやけさせられちゃう……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_030.mp3" onclick="voicePlay(this)">「あっ、あぁ……っ！　ダーリン、それ、すごいよぉ！メルの気持ちいいところ、全部こすってるの……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_031.mp3" onclick="voicePlay(this)">「これ、すぐにイッちゃう……ん、んんっ！あっ、あ、あ、んんん――っ！！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_032.mp3" onclick="voicePlay(this)">「――くひゅ、んんっ！　あっ、あぁ！　まってぇ！いま、イッたからぁ！　まってぇ！　ダーリン！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_033.mp3" onclick="voicePlay(this)">「なんで、急に――ひぅ、パコパコ、強くしちゃだめぇ！あっ、あぁ……そこ、ズコズコ――とめてぇ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_034.mp3" onclick="voicePlay(this)">「やぁ、あっ！　にげられ、ないぃ……やぁだぁっ！そこ……あたま、馬鹿になっちゃうとこっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_035.mp3" onclick="voicePlay(this)">「そこ、一番だめなのぉ！　降りてこれなく――あぁ！やぁ……好き勝手、されてるぅ……んっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_036.mp3" onclick="voicePlay(this)">「あ、あぁ、あぁあぁぁ……だめ、だよぉ……ほんとに、メルのこと……いぢめて……こわしちゃ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_037.mp3" onclick="voicePlay(this)">「おっきいの……くる、ぅ……んひゅ……きちゃう……あ、あ、あ、あぁ……だめ、ぇ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_038.mp3" onclick="voicePlay(this)">「こわれ、ちゃ……んんっ、――っ！！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_039.mp3" onclick="voicePlay(this)">「――は、ぁ……あぁ……あっ、あぁ……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_040.mp3" onclick="voicePlay(this)">「はっ、はぁ……んんっ、ん……ふぅ……あぁ……メル、ばかになっちゃた……かも……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_041.mp3" onclick="voicePlay(this)">「ダーリンに、こわされちゃう……メル、動けないのにダーリンから、逃げられないのに――えへっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_042.mp3" onclick="voicePlay(this)">「……だぁりん、あいしてる……よーぉ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_043.mp3" onclick="voicePlay(this)">「メルを自由にして……いっぱい遊んで……お気に入りに……してね……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_044.mp3" onclick="voicePlay(this)">「んふふー……これはお気に入りだねーぇ絶対またしてね、ダーリン……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7401_h02_045.mp3" onclick="voicePlay(this)">「えへへ……次は鎖を買おっかなーぁ」</span>
+</div>
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/750111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/750121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/760111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/760121.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/770111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/770121.jpg" onclick="changeImg(this)">
+<div>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_001.mp3" onclick="voicePlay(this)">「にぃに、こっちこっち！　これがレヴィアのコレクションなのれすっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_002.mp3" onclick="voicePlay(this)">「昔の海賊船のレプリカアンティークなのれすよっ！これとか、捕虜を捕まえておく道具らしいのれすっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_003.mp3" onclick="voicePlay(this)">「えへへ、レヴィア海賊っぽいれすか？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_004.mp3" onclick="voicePlay(this)">「……あれ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_005.mp3" onclick="voicePlay(this)">「にぃに……なんか、ハマっちゃったのれす。助けてほしいのれす……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_006.mp3" onclick="voicePlay(this)">「あれ、にぃに？　どこいくれすか？あっ……ちょ、ちょっと待ってほしいのれすっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_007.mp3" onclick="voicePlay(this)">「ひぅ……に、にぃに……なにしてるのれすか？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_008.mp3" onclick="voicePlay(this)">「れ、レヴィアの服、脱がせてるのれす！やぁ、ん……パンツまで……にぃにのえっち……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_009.mp3" onclick="voicePlay(this)">「ちょっと、これはひどいのれす……あっおちんちん……レヴィアのおまんこに……やぁ、んっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_010.mp3" onclick="voicePlay(this)">「だ、めぇ……えっちはお部屋でするれすよ？にぃに……こんな格好で……だめなのれす……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_011.mp3" onclick="voicePlay(this)">「あっ、んぅぅ……こすって焦らしても、ダメなのれす！こんなところでせっくすしちゃ、らめぇ……にぃに……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_012.mp3" onclick="voicePlay(this)">「やぁ、んっ……レヴィア、れいぷ……されちゃうれすぅレヴィア、れいぷせっくすなんて、好きじゃないのにぃ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_013.mp3" onclick="voicePlay(this)">「う、嘘じゃないれすよっ、ためしてみればいーのれす！レヴィアは簡単なオンナノコじゃないれすよ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_014.mp3" onclick="voicePlay(this)">「んっ、ひゃ、あぁ……ひゃうぅ……にぃにのおちんちん……熱い……っ、あ、あぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_015.mp3" onclick="voicePlay(this)">「はっ、あぁ……レヴィアのおつゆ、おちてぅ……にぃにのおちんちんで、かきだされてぅ……やぁん」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_016.mp3" onclick="voicePlay(this)">「ぁう？　だらしないかお、してないよ？　にぃにからは見えてないもん……レヴィアはえっちじゃないのれすっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_017.mp3" onclick="voicePlay(this)">「んふー、じぇんじぇん、あへってにゃいれしゅ……にぃにのれいぷに、まけてないれしゅよ……えへっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_018.mp3" onclick="voicePlay(this)">「はぁ、ぁ、あぁ……んひゅ、く、ぅ……はぁ、んっ！ぜんぜん、かんじてないれすぅ……ひゃ、ぁんっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_019.mp3" onclick="voicePlay(this)">「レヴィアたんは、にぃにのれいぷには、まけないれすっかんたんにえっち、許したりしないれすよ……ん、ぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_020.mp3" onclick="voicePlay(this)">「んっ、んっ、んんっ！　腰、自分から動かしてなんか、ないれすっ、逃げようとしてるれすよ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_021.mp3" onclick="voicePlay(this)">「ひゃ、ぁんっ！　あ、ぅ……にぃに、それ、ずるいれす腰、押し付けるの……レヴィア、らめなのにぃ……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_022.mp3" onclick="voicePlay(this)">「にぃに、ずこずこすゅの、はやいよぉ……ぁんっもぉ、初めての時は、優しかった、のに……ひぅっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_023.mp3" onclick="voicePlay(this)">「ぁう、ぬーって、抜かれるの……きもちいいれすぅ……うぁ……あぁんっ！　んぅ、にぃに、もう一回してぇ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_024.mp3" onclick="voicePlay(this)">「ひゃぅぅ……あっ、あっ、あっ！　にぃにっ！レヴィア、きもちいぃ……えへへっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_025.mp3" onclick="voicePlay(this)">「あっ……ちがうもんっ、みとめてないれしゅ！レヴィアは、れいぷに感じてるんじゃないれすぅ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_026.mp3" onclick="voicePlay(this)">「だって、にぃにがじゅぽじゅぽする、せいなのれすっレヴィアにせっくす教え込んだのは、にぃになのれす！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_027.mp3" onclick="voicePlay(this)">「だから、レヴィアがえっち大好きなのは……ぁ、んにぃに、が……はぁ、んっ、悪いの、れすっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_028.mp3" onclick="voicePlay(this)">「しぇきにん、とるれす……一回じゃ足りないから、ずっとずっと、レヴィアとせっくす、するれすよ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_029.mp3" onclick="voicePlay(this)">「――んっ、ぁ、あっ！　ひゃぅ、うぁぁっ！　にぃに！なんでっ、それ、もう射精するうごきれす……んんっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_030.mp3" onclick="voicePlay(this)">「やぁっ！　レヴィア、もっとゆっくりしたい！にぃにと、せっくす……もっと、してたいのれすぅ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_031.mp3" onclick="voicePlay(this)">「まだ、びゅうしちゃらめぇ！　もっとれいぷしててぇ！おまんこぐちゅぐちゅ、もっと、もっとしてぇ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_032.mp3" onclick="voicePlay(this)">「やぁんっ、がまん、するのれすっ！レヴィア、もっと気持ちいいの欲しいっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_033.mp3" onclick="voicePlay(this)">「あっ、ひゃぅ！　ら、らめぇ……レヴィアの好きなトコロで、イかせようとしちゃ、らめれすぅ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_034.mp3" onclick="voicePlay(this)">「もっと、もっとしてたいのにぃ！にぃにのばかぁ――あっ、あ、あ――あぁ！！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_035.mp3" onclick="voicePlay(this)">「――ひゃぁぁあぁぁぁんっ！！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_036.mp3" onclick="voicePlay(this)">「あっ、あへ……うぁ、イッちゃったぁ……にぃにのれいぷせっくす……きもちぃぃ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_037.mp3" onclick="voicePlay(this)">「おまんこに、流れ込んきてるのれす……うれしいよぉにぃにの精子……レヴィア、大好きぃ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_038.mp3" onclick="voicePlay(this)">「んぅ……にぃにぃ……もっかい、しよぉ？こんどはもっとゆっくり……してぇ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_039.mp3" onclick="voicePlay(this)">「にぃにはれいぷのげんこーはんなのれす。レヴィアが逮捕して一日中そばに居るのれす」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_040.mp3" onclick="voicePlay(this)">「最終的に和姦とか関係ないのれす。お外でせっくすするのは人としてダメなのれす」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_041.mp3" onclick="voicePlay(this)">「――んっ……ちゅ……んぁ、あぅ……もぉ、ちゅーじゃ誤魔化されないれすよ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_042.mp3" onclick="voicePlay(this)">「――……レヴィアのこと、好き？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7701_h02_043.mp3" onclick="voicePlay(this)">「ぁ……えへへ……もー、仕方ないれすね！今度はちゃんとお部屋でするんれすよ？　にぃに？」</span>
+</div>
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/780111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/780121.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/780211.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/780221.jpg" onclick="changeImg(this)">
+<div>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_001.mp3" onclick="voicePlay(this)">「……ダーリンくんは寂しがり屋ですね。異世界の貴族に戻ると言っても、随分先のことですよ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_002.mp3" onclick="voicePlay(this)">「それに……魂の名を捧げたエルとダーリンくんは、いつでも繋がっているのですから」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_003.mp3" onclick="voicePlay(this)">「それで満足できないなら、開放都市の王様になってくれますか？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_004.mp3" onclick="voicePlay(this)">「もしくは“離れるな”と……エルの魂の名に命じてくれますか？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_005.mp3" onclick="voicePlay(this)">「くすっ……頷けないのなら、まだ答えは要りませんよ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_006.mp3" onclick="voicePlay(this)">「ふふっ……ねぇ、えっちしますか？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_007.mp3" onclick="voicePlay(this)">「悩んでくれてる……愛してくれていると感じたら、甘えたくなってしまいました……しましょう？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_008.mp3" onclick="voicePlay(this)">「ん、ぁっ、なんか、さわり方がやらしいです……ぁんっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_009.mp3" onclick="voicePlay(this)">「確かめるみたいに触ってます……エルはちゃんと、ダーリンくんの上にいますよ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_010.mp3" onclick="voicePlay(this)">「ふふっ……そんな、安心したかわいい顔して……っ！ぁ、ゃん……乳首、つねっちゃ、だめですよ……ぁん」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_011.mp3" onclick="voicePlay(this)">「ん、はぁ……えへへ、もう、入れちゃいますよ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_012.mp3" onclick="voicePlay(this)">「ふっ、んぅ……ぁ、んんっ……はぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_013.mp3" onclick="voicePlay(this)">「はぁ……あぁ、ダーリンくんのおっきなちんちん、エルのナカにぴっちり収まっちゃいました……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_014.mp3" onclick="voicePlay(this)">「ダーリンくん、きもちいいですか？エルのまんまんが、ちんちんをギュってしてますよ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_015.mp3" onclick="voicePlay(this)">「ロリまんまん、大好物ですよね？ほら、いつもみたいに……お馬さんごっこしましょう」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_016.mp3" onclick="voicePlay(this)">「ぁ……んっ……あっ、あぁ……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_017.mp3" onclick="voicePlay(this)">「んっ、ちんちん、いきどまりに、ちゅー、したっあっ、あっ、あっ、ズンズン、きもち、ぃ……んうぅぅ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_018.mp3" onclick="voicePlay(this)">「ダーリンくん、お馬さんじょうずです……んぁ……あ、それぇ……ぐりぐりも、きもちいいです……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_019.mp3" onclick="voicePlay(this)">「んっ、うぁ……あっ、あっ、だーりん、くぅん……ぁう」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_020.mp3" onclick="voicePlay(this)">「ひゃ、あぁ、ダーリンくんっ、ダーリンくんっ！もぉ、はいらな……あっ、いきどまり、ですよぉ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_021.mp3" onclick="voicePlay(this)">「こすり、すぎ……エルのまんまん、いぢめすぎ、ですっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_022.mp3" onclick="voicePlay(this)">「やら……あぅ……おしる、吹いちゃいますっそんな、そこばっかりされたら、すぐ……や、ぁ、あぁっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_023.mp3" onclick="voicePlay(this)">「ダーリン、くん……ぁ、んぅ、んぁああぁぁっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_024.mp3" onclick="voicePlay(this)">「ぁ、あぁ……はひゅ、はひゅ……えへ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_025.mp3" onclick="voicePlay(this)">「もぉ、イかされちゃった……ダーリンくん、エル、えっちなすいっち、おされちゃった♪」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_026.mp3" onclick="voicePlay(this)">「ダーリンくん、まだ、きもちよくなれてないよね？ね？　もっと、エルできもちよく、なろ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_027.mp3" onclick="voicePlay(this)">「エルね、ダーリンくんに、いっぱい、いぢめられたいよだいすき、だよ……あっ、えへ、きたぁ♪」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_028.mp3" onclick="voicePlay(this)">「おうまさん、もっと、エルのまんまん、ずぶずぶしてっあっあっ、あぁっ！　しゅご、はやい、よぉ……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_029.mp3" onclick="voicePlay(this)">「んぅ、えるも、するぅ……ダーリンくんのこと、きもちよく、すゆっ……んっ、んっ、ね？　どーお？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_030.mp3" onclick="voicePlay(this)">「エルのおしり、ずりずり、うごいてるよっ！ね、ね、きもちい？　ダーリンくん、これ、すき？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_031.mp3" onclick="voicePlay(this)">「えるのこと、すき？　えるはね、だいすきっ！だーりんくんっ、だーりんくんっ、すき、だよっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_032.mp3" onclick="voicePlay(this)">「えへへ、ちんちんきもちいい……ぁ、ここでこするの、だーりんくん、すきみたいっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_033.mp3" onclick="voicePlay(this)">「えるのろりまんまんの、まんなかっ！ちんちんのさきっぽ、ちゅぽちゅぽって、できるでしょ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_034.mp3" onclick="voicePlay(this)">「えへ、えへへ……えっちですけべなおうまさん……せーし出ちゃいそうな顔してる……かわいい」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_035.mp3" onclick="voicePlay(this)">「あかちゃんのもと、ぴゅっぴゅ、してっ？えるのまんまんに、びゅー、して？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_036.mp3" onclick="voicePlay(this)">「あ、あ、あっ、える、しゃせいされてイかされるの、すきだからっ、ねっ、しゃせい、してほしい、よぉ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_037.mp3" onclick="voicePlay(this)">「んぁ、あっ、おくに、ずりゅって――ひゃうぅ！えへ、えへへ……いちばんおくで、だすつもりだぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_038.mp3" onclick="voicePlay(this)">「いーよっ、きて、きてっ！　だーりんくん、いっぱい、いーっぱい、えるに射精してっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_039.mp3" onclick="voicePlay(this)">「エルを、はなさないで――」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_040.mp3" onclick="voicePlay(this)">「んぁ、あっ、ぁ――ひゃぁああぁあぁぁっ！！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_041.mp3" onclick="voicePlay(this)">「――んっ、くひゅ……ぁ……はぁ……はぁ……ぁあかちゃんの、へや……あちゅい……んっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_042.mp3" onclick="voicePlay(this)">「……今日も、いっぱい射精しちゃったね？えへへ、ろりこんだーりんくん……だいすき」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_043.mp3" onclick="voicePlay(this)">「エル、ね……本当はね……ダーリンくんに、命令、されたいの……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_044.mp3" onclick="voicePlay(this)">「ダーリンくんに、ぜんぶ……決められたいの……行くなって、そばに居ろって……言われ、たい――」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_045.mp3" onclick="voicePlay(this)">「でもね……頑張れって……離れてもいいから、思い通りにやれとも……言われたいなぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_046.mp3" onclick="voicePlay(this)">「あなたの言葉に、縛られていたい」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/7802_h02_047.mp3" onclick="voicePlay(this)">「ねぇ、ダーリンくん。いつか……答えをちょうだい。エルはどっちを選んでも……きっと、しあわせになるから」</span>
+</div>
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/7901.png"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/790111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/thum/7901.png"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/790121.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/800111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/800121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/800211.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/800221.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/810111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/810121.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/820111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/820121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/830111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/830121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/840111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/840121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/850111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/850121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/860111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/860121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/870111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/870121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/880111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/880121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/890111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/890121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/900111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/900121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/910111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/910121.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/920111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/920121.jpg" onclick="changeImg(this)">
+
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/920211.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/920221.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/930111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/930121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/930211.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/930221.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/940111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/940121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/950111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/950121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/960111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/960121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/970111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/970121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/980111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/980121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/990111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/990121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1000111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1000121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1010111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1010121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1020111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1020121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1030111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1030121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1040111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1040121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1050111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1050121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1060111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1060121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1070111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1070121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1080111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1080121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1090111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1090121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1100111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1100121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1110111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1110121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1120111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1120121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1130111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1130121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1140111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1140121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1150111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1150121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1160111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1160121.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1170111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1170121.jpg" onclick="changeImg(this)">
+<div>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_001.mp3" onclick="voicePlay(this)">「おーい、あるじー。わらわのあるじー」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_002.mp3" onclick="voicePlay(this)">「む……こんな所におったか。わらわは眠い。だっこしろー？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_003.mp3" onclick="voicePlay(this)">「ふふっ……おぬしはあたたかいのう」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_004.mp3" onclick="voicePlay(this)">「処女懐胎で、男を知らぬ身じゃが……こうされると身体が疼く……くふっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_005.mp3" onclick="voicePlay(this)">「……するかー？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_006.mp3" onclick="voicePlay(this)">「んっ、ふぅ……どうした？わらわの顔に、なにかついとるかの？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_007.mp3" onclick="voicePlay(this)">「くふふ……可愛い目と鼻と口がついておるじゃろ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_008.mp3" onclick="voicePlay(this)">「ぁ……んっ……入れるか？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_009.mp3" onclick="voicePlay(this)">「ふふっ、リモンを産んだ穴じゃが、こうして逸物を入れられるのは初めてじゃのう……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_010.mp3" onclick="voicePlay(this)">「はよう、きておくれ……きゅうきゅうするのじゃ。おぬしの逸物で、わらわに女の悦びを教えてみせよ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_011.mp3" onclick="voicePlay(this)">「んっ――ぁ、はぁ……ん、んん……んぅ……ぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_012.mp3" onclick="voicePlay(this)">「案外、きついものじゃなぁ……娘を産んだのは、五十年も前じゃから、あっ……はぁぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_013.mp3" onclick="voicePlay(this)">「くふふ……口元が緩んでおるぞ……んっ、かわいい顔をしよって……子宮にクるなぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_014.mp3" onclick="voicePlay(this)">「ほれ……具合がよいなら、動いてよいぞー？痛みはない、好きにしてたもれー」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_015.mp3" onclick="voicePlay(this)">「……ぁ、んっ……んっ、んっ、はぁ……ははっ、声が、漏れてしまう、なぁ……ぁん」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_016.mp3" onclick="voicePlay(this)">「くふっ、くふふ……こんな甘い声が出るとは……ぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_017.mp3" onclick="voicePlay(this)">「んっ、腰をひっつかんで、そんなに、激しく……くひゅっ、ん、ぁ……夢中、じゃなぁ……っ、んぁっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_018.mp3" onclick="voicePlay(this)">「おぬしの逸物が、一番深いところに触れておる……っこれは、よいなぁ……ん、しあわせ、じゃなぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_019.mp3" onclick="voicePlay(this)">「あぁ、んっ……はぁ、のぼせそうなくらい、感じておる……おぬしの逸物が、子宮に届くたび――あっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_020.mp3" onclick="voicePlay(this)">「気をやってしまいそうじゃぁ……人が夢中になるのも、しかたあるまい……これは、よすぎる――ぁ、んっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_021.mp3" onclick="voicePlay(this)">「あぁ……触れ合っていると、愛してしまいそうじゃ……深くつながると、こんなにも……心が揺れるか……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_022.mp3" onclick="voicePlay(this)">「……あるじ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_023.mp3" onclick="voicePlay(this)">「んっ、ぁ、ぬけちゃ……ゃんっ――んっ、ちゅっ、ちゅっ……れりゅ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_024.mp3" onclick="voicePlay(this)">「んっ、はひゅ、んっ、んっ、んぅ、んんん――っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_025.mp3" onclick="voicePlay(this)">「はっ、はぁ……ばか……くちづけは、ずるいじゃろ……ぁ、また……ん、ふぅ……んんんっ、ぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_026.mp3" onclick="voicePlay(this)">「……イってしもうた」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_027.mp3" onclick="voicePlay(this)">「んっ、はぁ……足が、ふるえて……言うことをきかぬ。おぬしは……あっ、ん……うん、つづけて、よいぞ……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_028.mp3" onclick="voicePlay(this)">「あぁ……あたまの、なかっ、とろけそうじゃあ……おぬしのことばが、よく、わからん……んっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_029.mp3" onclick="voicePlay(this)">「あぁ、すべて、ゆだねる……わらわのこと、ぜんぶ……愛して、くれー？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_030.mp3" onclick="voicePlay(this)">「ひゃ、ぁ……あっ！　あっ、あっ、あっ、はぁ、んっ！あるじ、そこ、こするの……っ、はぁ……よい、ぞー？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_031.mp3" onclick="voicePlay(this)">「もういっかい、トントン、って、してくれー？それ、すきじゃ……んぅ、めすに、なる……ぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_032.mp3" onclick="voicePlay(this)">「はぁ、はぁ……あっ！　んぅ、んっ、んっ、あぁ……おちて、しまう……はひゅ、ん、んんっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_033.mp3" onclick="voicePlay(this)">「あっ、おちる……おち、るぅ……やぁ、ん……っあるじぃ……わらわを、墜とす……かー？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_034.mp3" onclick="voicePlay(this)">「――くふっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_035.mp3" onclick="voicePlay(this)">「よい、ぞぉ……せいし、だせぇ……ぁ、わらわのめす穴に、吐精してっ、おとして……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_036.mp3" onclick="voicePlay(this)">「天使に、恋を……させておくれ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_037.mp3" onclick="voicePlay(this)">「あっ、あぁ、あ、くる……ん、ぁ――っ！！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_038.mp3" onclick="voicePlay(this)">「――あぁああぁぁぁっ！！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_039.mp3" onclick="voicePlay(this)">「はっ、はっ、あぁ、あ……あぁぁ……っ、ある、じ……まだ、するのかー……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_040.mp3" onclick="voicePlay(this)">「……はい」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_041.mp3" onclick="voicePlay(this)">「――ん、んぅ……あ、あぇ？ふふっ……もう、なんど気をやったか、わからぬ……なぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_042.mp3" onclick="voicePlay(this)">「あるじに、おとされて……めすに……ぁあっ、あっ、あっ！　おと、され……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_043.mp3" onclick="voicePlay(this)">「――ぁ、おとされ、ちゃった」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_044.mp3" onclick="voicePlay(this)">「はぁ……はぁ……わらわの、あるじ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_045.mp3" onclick="voicePlay(this)">「歳をくってからの恋は、こじらせるものと聞くからの。かくご、するんじゃぞ……くふっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_046.mp3" onclick="voicePlay(this)">「天使に手を出した禁忌……一生、背負ってもらうからの？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_047.mp3" onclick="voicePlay(this)">「んー……腰がだるいのー……あるじー、甘やかせー……きすもしろー？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_048.mp3" onclick="voicePlay(this)">「……ん、ちゅっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_049.mp3" onclick="voicePlay(this)">「くふふっ、頬があついのう……これは重症じゃ。なぁ、わらわのあるじ――」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_050.mp3" onclick="voicePlay(this)">「――パイロン」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_051.mp3" onclick="voicePlay(this)">「わらわの、天界での名じゃ。おぬしでもわらわは支配出来ぬが……与えよう」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11701_h02_052.mp3" onclick="voicePlay(this)">「くふっ……わらわの恋の証じゃよ」</span>
+</div>
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1180111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1180121.jpg" onclick="changeImg(this)">
+<div>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_001.mp3" onclick="voicePlay(this)">「あ、あるじさまぁ……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_002.mp3" onclick="voicePlay(this)">「……ちゅっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_003.mp3" onclick="voicePlay(this)">「ん、その……んぅ……なんでもない、呼んだだけ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_004.mp3" onclick="voicePlay(this)">「んっ……そんなにのぞき込んじゃやぁよぉ……もぉ……ちゃんと言うからぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_005.mp3" onclick="voicePlay(this)">「……ふたりきり、でしょぉ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_006.mp3" onclick="voicePlay(this)">「……年下でも、こういう時はリードしてほしぃなぁって、思うんだけどぉ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_007.mp3" onclick="voicePlay(this)">「な、なぁに？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_008.mp3" onclick="voicePlay(this)">「だまっちゃ、いやよぉ……なんか、言ってぇ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_009.mp3" onclick="voicePlay(this)">「んぅ……照れさせるの、禁止……おなかの奥がきゅうきゅうしすぎて、倒れちゃうわよぉ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_010.mp3" onclick="voicePlay(this)">「もぉ……ん、ほら……ど、どうぞぉ？あるじさまのリモンを……たべて、いいわよ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_011.mp3" onclick="voicePlay(this)">「こし、あげるね？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_012.mp3" onclick="voicePlay(this)">「あ……やだ、ドロドロになってるぅ……んっ、ぁ……はいっちゃう……ゃんっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_013.mp3" onclick="voicePlay(this)">「ぁ、ぁ、あぁぁ……はぁ、んっ、ふぅ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_014.mp3" onclick="voicePlay(this)">「あっ、あっ、ぁんっ……あるじ、さまぁ……リモンと、身体も繋がっちゃったわねぇ……ん、んぅ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_015.mp3" onclick="voicePlay(this)">「困っちゃう、わぁ……繋がると、思い知らされるの。あるじさまのこと、私、こんなに……好きなんだぁ……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_016.mp3" onclick="voicePlay(this)">「恋を、しちゃったの、ねぇ……んっ、ぁん……はぁ……はぁ……こし、うごかせないよぉ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_017.mp3" onclick="voicePlay(this)">「あるじさまぁ……リモンのからだ、ゆすって？えっち、させてぇ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_018.mp3" onclick="voicePlay(this)">「んん……っ！　あっ、奥まで、きちゃ……っん、ふぅ……ふぅ、んっ、あっ、あっ、あぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_019.mp3" onclick="voicePlay(this)">「すごい、おと……ぱちゅん、ぱちゅん、って……リモンのおまんこ、よだれ、たらしすぎよぉ……ゃんっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_020.mp3" onclick="voicePlay(this)">「はひゅ……うぅ……あるじさまの、おちんちん……っきもちいぃ……あぁ……んっ、んっ、んんっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_021.mp3" onclick="voicePlay(this)">「あるじ、さまぁ……すき、ぃ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_022.mp3" onclick="voicePlay(this)">「――んっ、ちゅ、ちゅる……れりゅ、ん、ぁぷぁ……ありゅじしゃまぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_023.mp3" onclick="voicePlay(this)">「うぅぅ……キスしたら、あいえき、吹き出したぁ。……好きな男の子にキスされたら、仕方ないじゃない」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_024.mp3" onclick="voicePlay(this)">「ぁえ……よだれ、でてたぁ……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_025.mp3" onclick="voicePlay(this)">「あぅ……吸っちゃったのぉ？……あるじさまの、ヘンタイ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_026.mp3" onclick="voicePlay(this)">「ん……ぁ、また……はぁ、はぁ……あぅ、んっあっ、あっ……また、奥のほう、こすってるぅ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_027.mp3" onclick="voicePlay(this)">「あるじさまのおちんちんが、リモンのだめなところ、さがして……ひゃぅ！　あっ、だ、だめぇ……そこぉ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_028.mp3" onclick="voicePlay(this)">「んっ、ひゃぁう！　あっ！　あっ、あっ！あるじさまぁっ！　そこ、おなかの内側、だめぇ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_029.mp3" onclick="voicePlay(this)">「やんっ、あっ、やぁぁ……それぇ、頭とけちゃう……！やだぁ……リモン、これ、すきっ……あっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_030.mp3" onclick="voicePlay(this)">「はひゅ、はひゅぅ……だ、めぇ……っりもん、かんたんなおんなのこになっちゃうっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_031.mp3" onclick="voicePlay(this)">「すぐ、イっちゃ……やっ、あ、あぁ、あぁあぁぁ――っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_032.mp3" onclick="voicePlay(this)">「――あ、あっ！　んぅ、んんんっ！！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_033.mp3" onclick="voicePlay(this)">「あぅ……ぁ、ありゅじ、しゃまぁ……おなか、あったかいよぉ……だぁいしゅきぃ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_034.mp3" onclick="voicePlay(this)">「んぅ……まだ、かたぁい……もっと、するぅ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_035.mp3" onclick="voicePlay(this)">「――あっ、やぁん……あるじさま、すごぉい……まだ、ずりずり、してくりぇる……のぉ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_036.mp3" onclick="voicePlay(this)">「いい、わよぉ……たまたまの中の、ぜんぶ、ちょーだい？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_037.mp3" onclick="voicePlay(this)">「リモンのこどもみたいなおなかに、ぜぇんぶ、びゅうびゅうって、してぇ……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_038.mp3" onclick="voicePlay(this)">「あのね……リモンのおめめ、じぃって見つめて、しゃせい、してぇ？　あるじさまっ、してぇ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_039.mp3" onclick="voicePlay(this)">「俺のものだよって、ゆって？精子、びゅうーってして、りもんに、わからせて、ねぇ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_040.mp3" onclick="voicePlay(this)">「あるじさまっ、あるじ、さまっ……ぁ、んっ、んんっ！はっ、はっ、はっ、イくっ、イく、からぁ……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_041.mp3" onclick="voicePlay(this)">「いっしょ、きて……はぁ、んっ、あっ、あぁ――っ！！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_042.mp3" onclick="voicePlay(this)">「――あ、ぁああああああああああっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_043.mp3" onclick="voicePlay(this)">「あ、ぁっ……はひゅ、う、ぁ……にかい、めぇ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_044.mp3" onclick="voicePlay(this)">「――ぁう、うぁ……あぅ？えへへ……きゅーかい、イきまひたぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_045.mp3" onclick="voicePlay(this)">「りもんは、ありゅじしゃまの、です……えへっだいすきっ、だいすきっ……んっ、ぁ――」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_046.mp3" onclick="voicePlay(this)">「――ぁん」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_047.mp3" onclick="voicePlay(this)">「ふぅ……ふぅ……も、きぜつ、しちゃいそぉ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_048.mp3" onclick="voicePlay(this)">「おなか、ふくらんじゃってるわぁ……あるじさまの、ぜつりんさん……くすっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_049.mp3" onclick="voicePlay(this)">「一人だけでお相手したらぁ、すぐ壊れちゃいそぉねぇ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_050.mp3" onclick="voicePlay(this)">「だから……浮気はゆるしちゃうけどぉ……ちゃぁんとまた、愛してるって、言ってねぇ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/11801_h02_051.mp3" onclick="voicePlay(this)">「あなたはリモンの、あるじさまなんだから……ね？」</span>
+</div>
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1190111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1190121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1200111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1200121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1210111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1210121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1220111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1220121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1230111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1230121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1240111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1240121.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1250111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1250121.jpg" onclick="changeImg(this)">
+<div>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_001.mp3" onclick="voicePlay(this)">「はい、今日のお仕事はこれで終わりです。また手が回らなくなったら、私を呼んでくださいね」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_002.mp3" onclick="voicePlay(this)">「さぁ、ここからはご褒美の時間ですよ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_003.mp3" onclick="voicePlay(this)">「手を繋いでも、いいですか？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_004.mp3" onclick="voicePlay(this)">「幸せそうに見えますか……そうですね、鈍感な貴方でも気付いてしまうくらい、育ってしまいましたか」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_005.mp3" onclick="voicePlay(this)">「何故だか……本当に、お分かりになりませんか？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_006.mp3" onclick="voicePlay(this)">「貴方は、ご自身が女の子にどのような言葉を与え、どのように救っているのか……自覚するべきですよ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_007.mp3" onclick="voicePlay(this)">「私は分かりやすい部類です……最初から、貴方の一番になりたいとアピールしてるじゃないですか」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_008.mp3" onclick="voicePlay(this)">「ふふっ、そういうことです」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_009.mp3" onclick="voicePlay(this)">「……ひゃん」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_010.mp3" onclick="voicePlay(this)">「あの……とってもマニアックな格好をさせられている気がします……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_011.mp3" onclick="voicePlay(this)">「何故、脱がしたのにタイツだけ履かせるんですか……ん、もぉ……聞いてますか……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_012.mp3" onclick="voicePlay(this)">「……嬉しそうなお顔」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_013.mp3" onclick="voicePlay(this)">「分かりました、すべて貴方のお好きなように……んっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_014.mp3" onclick="voicePlay(this)">「ぁ……はぁ、ん……おまんこ、くにゅって……貴方のおちんちんが、あたってます……ぁん」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_015.mp3" onclick="voicePlay(this)">「はやく、私の中に入りたいんですね……ん、ふぅ……はい、いいですよ……広げます、から……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_016.mp3" onclick="voicePlay(this)">「ん……ぁ、はぁ……あぁぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_017.mp3" onclick="voicePlay(this)">「あ、の……まだ、奥……はいれます、よ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_018.mp3" onclick="voicePlay(this)">「んっ、ぁ……やぁ、ん、いりぐち、かきまぜられて……それ、むずむず……しちゃ、ぁ……はぁ、んっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_019.mp3" onclick="voicePlay(this)">「締まっちゃう……んっ、あ、あの、きつくないですか？やだ、おまんこが勝手に……きゅうって、しちゃう……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_020.mp3" onclick="voicePlay(this)">「おちんちんのさきっぽ、吸いついちゃってます……もっと、奥に来てほしいのに……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_021.mp3" onclick="voicePlay(this)">「あっ、あっ、あぁ……ぁんっ……ん、あの、奥まで、来てほしいのですが……ひゃっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_022.mp3" onclick="voicePlay(this)">「入り口で、遊ばないで……んっ、んぅ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_023.mp3" onclick="voicePlay(this)">「そんなに浅いところばかり、ほじられたら、せつない、ですよぉ……ぁ、んんっ……はぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_024.mp3" onclick="voicePlay(this)">「ぁ、う……そういうこと、言わせたいのですか？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_025.mp3" onclick="voicePlay(this)">「ん……セエレの、子宮に……ちゅー、してください」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_026.mp3" onclick="voicePlay(this)">「――ん、ぁ……あっ、あっ、きた……ん、んぅぅ……っ！ちゅー、子宮に、ちゅーされちゃいました……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_027.mp3" onclick="voicePlay(this)">「あついの、ぴゅうって……中に……っ貴方のお漏らし汁、子宮に入ってる……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_028.mp3" onclick="voicePlay(this)">「うれしい、です……大好きな人が……私の、おんなのこの一番大事なところに……ぁんっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_029.mp3" onclick="voicePlay(this)">「えっち……ほんとうのえっち、してます……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_030.mp3" onclick="voicePlay(this)">「あ、おちんちん、うごいて……あ、ゃ、ひゃうぅ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_031.mp3" onclick="voicePlay(this)">「きもちいい、です……もっと、セエレのおまんこちゅっちゅ、してくださいっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_032.mp3" onclick="voicePlay(this)">「んぅ……奥……っ、それ、ぎゅうっておしつけるの、好き……んうぅぅ……はぁ、はぁ……すきっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_033.mp3" onclick="voicePlay(this)">「あっ、どうしましょう……これ、どうしよ……っこんなに、気持ちよくて、愛しい気持ち、覚えちゃったら」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_034.mp3" onclick="voicePlay(this)">「貴方に抱かれることばっかり考えちゃう、えっちな子に、なっちゃいます……あっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_035.mp3" onclick="voicePlay(this)">「や、ぁ、あっ、あっ、激しく、しちゃ……いま、それっ、ぁ、駄目、ですぅ……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_036.mp3" onclick="voicePlay(this)">「だめ、だめ、なのにぃ……おしつぶされ、ちゃ……はぁ……っ、好き、すき……ぁ、すき、ですっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_037.mp3" onclick="voicePlay(this)">「貴方も、せっくすも、だいすきっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_038.mp3" onclick="voicePlay(this)">「こんどから、ぜんぶっ、ごほうび、ぜんぶっせっくすがいいですっ、あっ、あぁ、ぁ――！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_039.mp3" onclick="voicePlay(this)">「あっ、それ、しきゅう、もっと、くちゅくちゅしてっ！貴方のおちんちんで、蕩かして、くらさいっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_040.mp3" onclick="voicePlay(this)">「ひゃ、あっ、あぁ！　ぁ、イく、イきましゅっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_041.mp3" onclick="voicePlay(this)">「ごほうびっ、ごほうびのせーし、セエレにくださいっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_042.mp3" onclick="voicePlay(this)">「射精しながら、セエレのこと、イかせてっ！セエレを、しあわせに、してっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_043.mp3" onclick="voicePlay(this)">「あるじ、さまぁ……ん、ん、んぅ――ッ！！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_044.mp3" onclick="voicePlay(this)">「――ぁ、あぁああぁぁぁぁっ！！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_045.mp3" onclick="voicePlay(this)">「ぁ、はひゅ……うぁ、ぁ……はぁ……もっと奥――あっ、奥に、しゃせい……ぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_046.mp3" onclick="voicePlay(this)">「んぅ……ふぅ……ふぅ……あぁぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_047.mp3" onclick="voicePlay(this)">「ん……ぁ、しきゅう、ふくらんじゃいます……もっと、あなたの精子、のみたい、のに……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_048.mp3" onclick="voicePlay(this)">「あふれちゃうの、やだぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_049.mp3" onclick="voicePlay(this)">「あの、パンツどこに隠しちゃったんですか……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_050.mp3" onclick="voicePlay(this)">「タイツ、このまま履くのですか……ん、精子がべっとり張りついちゃってます……ん、ぁ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_051.mp3" onclick="voicePlay(this)">「満足そうなお顔ですね……ええ、全然嫌ではないです。貴方のえっちな命令、好きですよ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/12501_h02_052.mp3" onclick="voicePlay(this)">「ふふっ、次のご命令もお待ちしております♪」</span>
+</div>
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1260111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1260121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1270111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1270121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1280111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1280121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1290111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1290121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1300111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1300121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1310111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1310121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1320111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1320121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1330111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1330121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1340111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1340121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1350111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1350121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1360111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1360121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1370111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1370121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1380111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1380121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1390111.jpg" onclick="changeImg(this)"><img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1390121.jpg" onclick="changeImg(this)">
+
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1400111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1400121.jpg" onclick="changeImg(this)">
+<div>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_001.mp3" onclick="voicePlay(this)">『ちゅ――んっ、ぷぁ……大好き』</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_002.mp3" onclick="voicePlay(this)">『コール、絶対してくれるってわかってたよ。早く降参したくて、仕方なかったんだ……ふふっ』</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_003.mp3" onclick="voicePlay(this)">『賭けたのは……私の全部、だよ？』</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_004.mp3" onclick="voicePlay(this)">「ねぇねぇ、勝負しようよー」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_005.mp3" onclick="voicePlay(this)">「えー？　イカサマー？　んー……どうかなぁ、おっぱいに何か隠してるかも――ぁん」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_006.mp3" onclick="voicePlay(this)">「……罰ゲーム、する？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_007.mp3" onclick="voicePlay(this)">「ふっ……ふぅ……っ、んひゅ……ふひゅう……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_008.mp3" onclick="voicePlay(this)">「んゅ……んっ！　んっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_009.mp3" onclick="voicePlay(this)">「――っ！　ぁ、ひゅっ……ひゅっ……んぅぅっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_010.mp3" onclick="voicePlay(this)">「ふっ、ふっ、ふぅ……んっ、んんん……っ！ふぅ、んっ、ふひゅぅ……ふー……ふー……ぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_011.mp3" onclick="voicePlay(this)">「…………っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_012.mp3" onclick="voicePlay(this)">「――ぁう、はぁ……はぁ……んくっ、ふはっ！これ、ひどいっ！　これすきっ！　だいすきっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_013.mp3" onclick="voicePlay(this)">「おちんちん、もっと、無料まんこで、ごしごし、してくらさいっ！　あっ、あっ、あぁ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_014.mp3" onclick="voicePlay(this)">「キミのっ！　キミのおちんちん、すきっ！　勝手にイッちゃうハメ放題まんこっ、躾けてくらさいっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_015.mp3" onclick="voicePlay(this)">「びっちで、いいれすっ！　どすけべでひゅ！あっ、あふっ、ふぅ、んっ、あぁあぁぁ――っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_016.mp3" onclick="voicePlay(this)">「――くぅ、んっ、あぁあぁぁぁぁっ！！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_017.mp3" onclick="voicePlay(this)">「はひゅ……は、ひゅぅ……んっ、あぁ……ごめんなひゃい……また、イッちゃったぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_018.mp3" onclick="voicePlay(this)">「ザーメンゴミ箱なのに、勝手にアヘアヘして、ごめん、なさ……ぁ、んぁっ、あっ、あっ、ゃんっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_019.mp3" onclick="voicePlay(this)">「はい……はいぃ……おしゃせえするまで、ゆるぎのまんこ、いっぱい、おちんぽでいぢめてぇ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_020.mp3" onclick="voicePlay(this)">「はいらん禁止された、キミせんよーのまんこれしゅ！んっ、んぅぅっ！　あっ、あっ、ひゃあぁあっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_021.mp3" onclick="voicePlay(this)">「あぅ……うぅ、んっ、ぁ……ごめん、ね？普通のせっくすじゃ、だめで、ごめんねっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_022.mp3" onclick="voicePlay(this)">「はずかしい、へんたいのせっくすが、きもちいのっこれじゃないと、もぉ、だめで……あっ、ひゃぁ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_023.mp3" onclick="voicePlay(this)">「淫乱っ、私、淫乱女に、されちゃったぁ……ゃんっキミに、メス便器に、されて……なっちゃったの！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_024.mp3" onclick="voicePlay(this)">「よだれ、だらだらたらしてる、へんたいで、ごめんねっ！あっ、んぅ、うぅぅ……ぁ、しょこっ、しょこ、しゅきっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_025.mp3" onclick="voicePlay(this)">「もぉ、おまんこ、どこ擦られてもきもちいいよぉ……また、イッちゃう……あ、どうしよ、イッちゃ……ぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_026.mp3" onclick="voicePlay(this)">「ごしゅじんさまぁ、あっ、ばつげーむで、一生無料になったゆるぎまんこに、びゅうびゅう、してぇ？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_027.mp3" onclick="voicePlay(this)">「ゆるぎの、しきゅう、もぉ、卵子のおへやじゃないのっごしゅじんさまの、せーしせんよーのしきゅうなのっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_028.mp3" onclick="voicePlay(this)">「だから、ねっ、ちょうだいっ……くらさいっ！せーしで、しきゅう、イかせてくらさいっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_029.mp3" onclick="voicePlay(this)">「ゴミ箱に、しゃせい、しよっ！　びゅっびゅっ、しよっ！あっ、あっ、あぁあぁぁ……ちんちん押しつけられてるっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_030.mp3" onclick="voicePlay(this)">「はいっ、はいぃ……いっしょに、イきましゅっ！おちんぽ様、きゅうって、して、イキますっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_031.mp3" onclick="voicePlay(this)">「あっ、あっあっあぁ！　ひゃ、ぁ――っ！！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_032.mp3" onclick="voicePlay(this)">「――きゃ、ぁ、あぁ！　あぁあぁぁぁぁっ！！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_033.mp3" onclick="voicePlay(this)">「ぁ……はっ、はっ……あぁ……んっ、くぁ……はぁ、しきゅう、ふくらんじゃってる……よぉ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_034.mp3" onclick="voicePlay(this)">「キミって、最高のご主人様かもぉ……えへへ普通のセックスじゃ、私、たぶん……だめだから」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_035.mp3" onclick="voicePlay(this)">「もっと、もっと、ひどくて変態なこと、されたいなぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_036.mp3" onclick="voicePlay(this)">「んぁ、え――んぅ！？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_037.mp3" onclick="voicePlay(this)">「ふっ、ふっ、んんっ！　んっ、ひゅっ、ふひゅっ！んっ……んんんん――ッ！！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_038.mp3" onclick="voicePlay(this)">「――ん、ぁ……はひゅ……はぁ、はぁ、はひゅぅ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_039.mp3" onclick="voicePlay(this)">「あ、はぁ……もぉ、イッた回数なんて、わかんないよぉ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_040.mp3" onclick="voicePlay(this)">「ちゃんと、かいて……くれたぁ？ん、ぁ……えへへ……ななかいも、だされちゃったんだぁ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_041.mp3" onclick="voicePlay(this)">「私がどすけべで、淫乱女だって、すぐ分かっちゃうよぉこんな、こんなの……素敵、すぎぃ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_042.mp3" onclick="voicePlay(this)">「キミのものになって、わたし……しあわせぇ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_043.mp3" onclick="voicePlay(this)">「あー、今回もすごかったぁ……あっ、だめ！膣出しの回数は消さないのっ！　このままがいいっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_044.mp3" onclick="voicePlay(this)">「変態って……やだなぁ、目覚めさせたのはキミじゃん。罰ゲームで、処女まんこをザーメンゴミ箱にしたくせにぃ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_045.mp3" onclick="voicePlay(this)">「んふふー……これはこれで、幸せな性生活だよ。ちょっと変態すぎて、人にはお見せ出来ないってだけ♪」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_046.mp3" onclick="voicePlay(this)">「……これからも、私のことを求めてね。ぜんぶ、キミのものになったんだからさ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14001_h02_047.mp3" onclick="voicePlay(this)">「おかえしに、私はキミのことをいっぱい、いーっぱい……しあわせにしてあげるからね」</span>
+</div>
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1410111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1410121.jpg" onclick="changeImg(this)">
+<div>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_001.mp3" onclick="voicePlay(this)">「ふふ、やっぱり来てくれたのね。嬉しいわ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_002.mp3" onclick="voicePlay(this)">「それじゃあ早速……んっ、ちゅ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_003.mp3" onclick="voicePlay(this)">「んふ、ちゅぷっ、ん、んくっ……ちゅ、んふ、んっ、ちゅぱ……ほ、ら……唾液、交換しましょう……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_004.mp3" onclick="voicePlay(this)">「ふふ、私特製の媚薬よ。すぐ効いてくるから、今夜はたっぷりと楽しみましょうか……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_005.mp3" onclick="voicePlay(this)">「んっ……黒咲家の当主に、こんな格好をさせるなんて、やっぱりあなた、大物ね……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_006.mp3" onclick="voicePlay(this)">「いえ、構わないわ……若い身体を求める気持ちは分かるし……求められるのは、いやじゃないわ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_007.mp3" onclick="voicePlay(this)">「だから……この身体を、たっぷりと快感でとろけさせて……一緒に気持ちよく、なりましょ……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_008.mp3" onclick="voicePlay(this)">「それで……私の子宮に、あなたの精液をたっぷりと注いで頂戴……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_009.mp3" onclick="voicePlay(this)">「んっ……すごい、もうこんなにガチガチになってる……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_010.mp3" onclick="voicePlay(this)">「ぁっ……こんなに硬くて熱いちんぽを擦り付けられたら、おまんこすぐ濡れちゃう……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_011.mp3" onclick="voicePlay(this)">「ほら、早く入れて……蕩けたおまんこに、ガッチガチのちんぽ、思い切りぶち込んでみて……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_012.mp3" onclick="voicePlay(this)">「愛液も、媚薬に変えて……んっ……あなたに、今まで味わったことのない快感を、味わわせてあげる……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_013.mp3" onclick="voicePlay(this)">「んっ、先端がめり込んでっ……ひぅっ、入ってくる、ぅ……ん、はぁっ、ん、んぅうう……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_014.mp3" onclick="voicePlay(this)">「はぁ、っ……ん、あ、ぁああっ……ちんぽ、奥まできたぁっ……んは、は、はぁぁ……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_015.mp3" onclick="voicePlay(this)">「んんっ……どう、このおまんこ、んんっ……きつくて、気持ちいい、でしょ……ん、ぁ、ああっ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_016.mp3" onclick="voicePlay(this)">「ん、ぁっ、おまんこに入った途端、媚薬漬けになったあなたのちんぽ、ずっとビクビクしてる……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_017.mp3" onclick="voicePlay(this)">「ふふっ……ほら、遠慮しないで動いて。一緒に、どこまでも、気持ちよくなりましょう……？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_018.mp3" onclick="voicePlay(this)">「あっ、ん、はぁぁっ……おまんこの壁、引っ掻かれてるっ、ふあ、あ、あく、ん、はぁぁ……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_019.mp3" onclick="voicePlay(this)">「こんな熱いので擦られたら……あふ、ん、ふぅっ、おまんこ、溶けちゃいそう……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_020.mp3" onclick="voicePlay(this)">「あ、あぁぁっ！そ、んなっ、激しくっ、ひぃっ、あ、ああっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_021.mp3" onclick="voicePlay(this)">「ふ、ふふっ、媚薬で、我慢出来なくなっちゃてるの……？あ、ぁんっ、ふ、んひっ、ひ、ぁぁぁっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_022.mp3" onclick="voicePlay(this)">「い、いいわよっ、あなたの欲望、もっと私のおまんこにぶつけてっ……全部、注ぎ込んで……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_023.mp3" onclick="voicePlay(this)">「あ、ふぁっ、あ、あひっ、ん、ぁく、ん、は、ぁ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_024.mp3" onclick="voicePlay(this)">「あぁっ、こんなに、激しく求められるなんて、んんっ、やっぱり若い体って、いい……っ、ん、はぁっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_025.mp3" onclick="voicePlay(this)">「ほら、もっと奥までっ……は、ぁぁっ、子宮まで、思い切り突き刺してっ、おまんこ感じさせて……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_026.mp3" onclick="voicePlay(this)">「ひぅっ、ぁはっ、ん、ふあぁっ！ちんぽで、掻き回されるのっ、気持ち、よすぎて……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_027.mp3" onclick="voicePlay(this)">「これが、あなたのチンポなのねっ、んんんぅっ、このちんぽで、早く孕ませてっ、種付け、してっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_028.mp3" onclick="voicePlay(this)">「ぁんっ、あなたとの子供が欲しいのっ私のために、あなたの赤ちゃん、孕ませて頂戴っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_029.mp3" onclick="voicePlay(this)">「ひあっ、あ、はぁっ！　んく、ふ、ふぁっ、は、はぁぁっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_030.mp3" onclick="voicePlay(this)">「いつでも、いいからっ、何回でもいいからっ、あなたの精液、私の子宮に出してぇ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_031.mp3" onclick="voicePlay(this)">「あ、はぁぁっ！　亀頭が子宮にめり込んでっ、ひぅっ、あ、あ、あぁっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_032.mp3" onclick="voicePlay(this)">「乱暴に犯されるの、気持ち、ぃ……ひ、ぁっ、も、だめ、私も、もう、イク……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_033.mp3" onclick="voicePlay(this)">「あなたも？　あなたもイク？なら、そのまま、中に注いでっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_034.mp3" onclick="voicePlay(this)">「外には出しちゃダメ、よ……あっ、全部っ、私の子宮に、出しなさい……っ！　あっ、ふぁ、あぁぁっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_035.mp3" onclick="voicePlay(this)">「あぁっ、ちんぽが、大きくっ……射精するのね、濃厚ザーメン、ぶちまけるのねっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_036.mp3" onclick="voicePlay(this)">「あ、はぁぁっ！　私も、イクっ！あなたのちんぽにイカされちゃうぅっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_037.mp3" onclick="voicePlay(this)">「あ、ふあっ、は、あ、はあああぁぁっ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_038.mp3" onclick="voicePlay(this)">「んはぁぁぁっ……中、熱いの出されて……っんく、ふ、ふぅ、んん……っ！」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_039.mp3" onclick="voicePlay(this)">「おまんこ、いっぱいにされてっ……んうぅ、すご、まだ出るの？　んっ、んぅぅ……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_040.mp3" onclick="voicePlay(this)">「はっ、はぁ、はぁ、、はぁぁ……全部、射精した？ん、ふ、んく、ふぁぁ……っ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_041.mp3" onclick="voicePlay(this)">「ぁ、おまんこから、精液が溢れて……そんなに気持ちよかったのね、このおまんこ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_042.mp3" onclick="voicePlay(this)">「……私も、とても気持ちよかったわ……んく、こんなに感じたの、初めてかも……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_043.mp3" onclick="voicePlay(this)">「なんでもないわ……ねえ、それよりも、今ので、妊娠したと思う？」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_044.mp3" onclick="voicePlay(this)">「……ふふ、安心しなさい。今回は排卵調整してあげるわ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_045.mp3" onclick="voicePlay(this)">「あなたとのセックス、思った以上に気持ちよかったから……今すぐ妊娠するの、勿体ないもの」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_046.mp3" onclick="voicePlay(this)">「だから、これからは私ともセックスしなさい……これ、命令よ」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_047.mp3" onclick="voicePlay(this)">「それと、いずれ必ず、あなたとの子供は産むわ。ええ、必ず、よ……」</span>
+  <span id="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/adv/tuto_event_voice/14101_h02_048.mp3" onclick="voicePlay(this)">「次に取り換える、優秀な身体を用意するためにね……」</span>
+</div>
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1420111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1420121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1430111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1430121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1440111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1440121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1450111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1450121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1460111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1460121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1470111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1470121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1480111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1480121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1490111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1490121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1500111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1500121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1510111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1510121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1520111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1520121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1530111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1530121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1540111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1540121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1550111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1550121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1560111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1560121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1570111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1570121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1580111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1580121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1590111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1590121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1600111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1600121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1610111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1610121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1620111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1620121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1630111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1630121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1640111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1640121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1650111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1650121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1660111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1660121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1670111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1670121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1680111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1680121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1690111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1690121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1700111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1700121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1710111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1710121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1720111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1720121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1730111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1730121.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1740111.jpg" onclick="changeImg(this)">
+<img src="http://a.school-alchemist.com/SchoolAlchemist/res/downloadfiles/character/event/1740121.jpg" onclick="changeImg(this)">
+</body>
+</html>
